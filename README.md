@@ -1,4 +1,5 @@
 # Alzheimer-s-Disease-Prediction
+This repository is in progress.
 Convolutional Neural Networks for Alzheimer's Disease Prediction Using Brain MRI Image
 Abstract
 Method
