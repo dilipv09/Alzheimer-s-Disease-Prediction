@@ -8,3 +8,5 @@ Method
 4. AlexNet and Transfer Learning
 5. Tools
 6. Experiment and Results
+7. Conclusions
+8. Reference
