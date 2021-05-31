@@ -6,7 +6,7 @@ Method
 1. Data
 2. Image preprocessing
 3. VoxCNN, Resnet3d, 3D CAE 
-4. AlexNet and Transfer Learning
+4. Transfer Learning
 5. Tools
 6. Experiment and Results
 7. Conclusions
