@@ -5,7 +5,7 @@ Abstract
 Method
 1. Data
 2. Image preprocessing
-3. VoxCNN, Resnet3d, 3D CAE 
+3. VoxCNN, Resnet3d
 4. Transfer Learning
 5. Tools
 6. Experiment and Results
