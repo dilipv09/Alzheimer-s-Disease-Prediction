@@ -2,7 +2,7 @@
 This repository is in progress.
 Convolutional Neural Networks for Alzheimer's Disease Prediction Using Brain MRI Image
 Abstract
-Method
+Methods
 1. Data
 2. Image preprocessing
 3. VoxCNN, Resnet3d
