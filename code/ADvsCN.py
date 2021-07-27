@@ -28,33 +28,34 @@ if __name__ == '__main__':
     df_f = df_CA[features].values
     df_t = df_CA.Classifier.values
 
+    # Random Forest Models
     rf_model = RandomForestClassifier(n_estimators=250,random_state=10)
     scores_rf = cross_val_score(rf_model, df_f, df_t, cv=5, scoring = 'accuracy')
     print(f'score for {5} folds:', scores_rf)
     print('RF_GINI_mean', mean(scores_rf))
     print('RF_GINI_std', std(scores_rf))
     
-
     rf_model_en = RandomForestClassifier(n_estimators=250,random_state=10, criterion='entropy')
     scores_rf_en = cross_val_score(rf_model_en, df_f, df_t, cv=5, scoring = 'accuracy')
     print(f'score for {5} folds:', scores_rf_en)
     print('RF_Entropy_mean', mean(scores_rf_en))
     print('RF_Entropy_std', std(scores_rf_en))
 
-
+    # XGBoost Classifier Models
     xg_model = XGBClassifier(n_estimators=200, learning_rate=0.5)
     scores_xg = cross_val_score(xg_model, df_f, df_t, cv=5, scoring = 'accuracy')
     print(f'score for {5} folds:', scores_xg)
     print('XG_Model_mean', mean(scores_xg))
     print('XG_Model_std', std(scores_xg))
 
-
+    # Support Vector Machine Models
     svm_model = svm.SVC(kernel='rbf', C=30, gamma='auto')
     scores_svm = cross_val_score(svm_model, df_f, df_t, cv=5, scoring = 'accuracy')
     print(f'score for {5} folds:', scores_svm)
     print('SVM_Model_mean', mean(scores_svm))
     print('SVM_Model_std', std(scores_svm))
 
+    # KNeighbour Classifier Models
     knn_model = KNeighborsClassifier()
     scores_knn = cross_val_score(knn_model, df_f, df_t, cv=5, scoring = 'accuracy')
     print(f'score for {5} folds:', scores_knn)
